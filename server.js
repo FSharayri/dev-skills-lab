@@ -7,7 +7,7 @@ import logger from 'morgan'
 import "dotenv/config.js"
 import methodOverride from 'method-override'
 // connect to the database with Mongoose
-import './config/database.js'
+ 
 
 // import routers
 import { router as indexRouter } from './routes/index.js'
