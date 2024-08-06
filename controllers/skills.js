@@ -4,12 +4,9 @@ import { Skill } from '../models/skill.js'
 // Cat.create({name: 'Fred', breed: 'Taco Cat'})
 
 
+
+
 async function index(req,res){
-    res.redirect('/skills/index')
-}
-
-
-async function skillsfunc(req,res){
   try{
     const skills = await Skill.find({})
     res.render('skills/index', {

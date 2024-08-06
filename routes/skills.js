@@ -6,8 +6,6 @@ const router = Router()
 router.get('/', skillsCtrl.index)
 // GET localhost:3000/skills/new
 router.get('/new', skillsCtrl.new)
-// GET localhost:3000/skills/index
-router.get('/index', skillsCtrl.skills)
 // GET localhost:3000/skills/:skillId
 router.get('/:skillId', skillsCtrl.show)
 // GET localhost:3000/skills/:skillId/edit
