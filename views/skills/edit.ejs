@@ -9,11 +9,11 @@
   <h1>Edit Skill</h1>
   <form autocomplete="off" action="/skills/<%= skill._id %>?_method=PUT" method="POST">
     Skill Name:
-    <input placeholder="<%= skill.name %>" name="name"></input>
+    <input value="<%= skill.name %>" name="name"></input>
     Skill Level:
-    <input placeholder="<%= skill.level %>" name = 'level'></input>
+    <input value="<%= skill.level %>" name = 'level'></input>
     Skill Field:
-    <input placeholder="<%= skill.field %>" name="field"></input>
+    <input value="<%= skill.field %>" name="field"></input>
     <button type="submit">Save Changes</button>
   </form>
 </body>
